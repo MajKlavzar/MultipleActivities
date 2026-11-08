@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow_bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_go_to_activity2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/go_to_activity_2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue_theme"
+        app:cornerRadius="0dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_go_to_activity3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/go_to_activity_3"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue_theme"
+        app:cornerRadius="0dp" />
+
+    <TextView
+        android:id="@+id/tv_counter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/blue_theme"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/count"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue_theme"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>
